@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hyVJvDnjovshjv1TKemSY9s/3j3dpEjK0dConWj7pqzumW5iFPWVEfm+mTB0xufZtRaxVNRK7I7U0u3YEx4LrQ==",
+  "dgSpecHash": "ps+wstUZ7ZDU7JdXknWU8T9HWa4/K6ySCnjHwzQ/FmZeIm8iusGHz2dBS1VGBOG+mOB6YdxnivWHGtsVcvoQBg==",
   "success": true,
   "projectFilePath": "C:\\repo\\i-was-abandoned-lol\\IwasabandonedTest\\IwasabandonedTest.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Pixel_64\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Pixel_64\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

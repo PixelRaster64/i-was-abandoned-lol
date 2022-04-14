@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace IwasabandonedTest
 {
@@ -6,7 +13,18 @@ namespace IwasabandonedTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IWebDriver driver = new ChromeDriver(@"C:\Selenium");
+        }
+        static void TestResult(Boolean blnResult)
+        {
+            if (blnResult)
+            {
+                Console.WriteLine("Passed!");
+            }
+            else
+            {
+                Console.WriteLine("Failed!");
+            }
         }
     }
 }
