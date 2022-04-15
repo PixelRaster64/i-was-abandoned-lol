@@ -67,7 +67,7 @@ namespace IwasabandonedTest
         }
         public static IWebElement txtPostal(IWebDriver driver)
         {
-            IWebElement txtPostal = driver.FindElement(By.Id("phone"));
+            IWebElement txtPostal = driver.FindElement(By.Id("postal"));
             return txtPostal;
         }
         public static IWebElement txtUrl(IWebDriver driver)

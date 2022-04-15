@@ -5,11 +5,36 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using MySql.Data.MySqlClient;
 
 namespace IwasabandonedTest
 {
     class SiteTest
     {
+        private static MySqlConnection connection;
+        public static void SiteReset()
+        {
+            // Setup the details for the connection
+            // server - address of the server
+            // database - database name of the site
+            // uid - username to login to the database
+            // pwd - password to login to the database
+            string myConnectionString = "server=47.55.247.242;database=bitter-site11;uid=site11;pwd=ASMfoo34b3CdZoss;";
+
+            // Give the connection object the connection details
+            connection = new MySqlConnection(myConnectionString);
+
+            // Create a command to be run, runs the "non-query stored procedure" called 'reset'
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = connection;
+            command.CommandText = "reset";
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // Open the connection, run the command, close the connection
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
         public static Boolean Test1(IWebDriver driver)
         {
             try
@@ -35,10 +60,11 @@ namespace IwasabandonedTest
         }
         public static Boolean Test2(IWebDriver driver)
         {
+            SiteReset();
             try
             {
                 fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
-                    "(555) 555-5555", "New Brunswick", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
                     "in your walls");
                 IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
                 String strSuccess = lblSuccess.Text;
@@ -56,7 +82,6 @@ namespace IwasabandonedTest
                 return false;
             }
         }
-
         static void fillSignup(IWebDriver driver, String strFirst, String strLast, String strEmail,
             String strUser, String strPass, String strCon, String strPhone, String strProv,
             String strAdd, String strPost, String strUrl, String strDesc, String strLoc)
@@ -89,12 +114,11 @@ namespace IwasabandonedTest
             txtAddress.SendKeys(strAdd);
 
             IWebElement dropProv = driver.FindElement(By.Id("province"));
-            SelectElement selectMonth = new SelectElement(province);
+            //selectProv = new selectprov(dropProv);
+            //selectProv.SelectByText("strProv");
+            dropProv.SendKeys(strProv);
 
-            //select the option by text.
-            selectProv.SelectByText("strProv");
-
-            IWebElement txtPostal = driver.FindElement(By.Id("phone"));
+            IWebElement txtPostal = driver.FindElement(By.Id("postal"));
             txtPostal.SendKeys(strPost);
 
             IWebElement txtUrl = driver.FindElement(By.Id("url"));
