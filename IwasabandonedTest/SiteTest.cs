@@ -19,7 +19,7 @@ namespace IwasabandonedTest
             // database - database name of the site
             // uid - username to login to the database
             // pwd - password to login to the database
-            string myConnectionString = "server=47.55.247.242;database=bitter-site11;uid=site11;pwd=ASMfoo34b3CdZoss;";
+            string myConnectionString = "server=192.168.2.104;database=bitter-site11;uid=site11;pwd=ASMfoo34b3CdZoss;";
 
             // Give the connection object the connection details
             connection = new MySqlConnection(myConnectionString);
@@ -90,7 +90,7 @@ namespace IwasabandonedTest
                 fillSignup(driver, "Elliot", "Whippie", "pixelraster64gmailcom", "Pixel", "password", "password",
                     "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
                     "in your walls");
-                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                IWebElement Error = driver.FindElement(By.Text(""));
                 String strSuccess = lblSuccess.Text;
                 if (strSuccess.Contains("Registration Successful!"))
                 {
