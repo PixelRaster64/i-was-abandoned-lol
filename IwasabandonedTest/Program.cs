@@ -29,7 +29,7 @@ namespace IwasabandonedTest
             Boolean blnSignTest02;
             blnSignTest02 = SiteTest.SignTest2(driver);
             TestResult(blnSignTest02);
-            
+
             Console.WriteLine("SignTest3 - no email domain");
             Boolean blnSignTest03;
             blnSignTest03 = SiteTest.SignTest3(driver);
@@ -116,16 +116,17 @@ namespace IwasabandonedTest
             TestResult(blnSignTest14);
 
             static void TestResult(Boolean blnResult)
-        {
-            if (blnResult)
             {
-                Console.WriteLine("Passed!");
-            }
-            else
-            {
-                Console.WriteLine("Failed!");
-            }
+                if (blnResult)
+                {
+                    Console.WriteLine("Passed!");
+                }
+                else
+                {
+                    Console.WriteLine("Failed!");
+                }
 
+            }
         }
     }
 }
