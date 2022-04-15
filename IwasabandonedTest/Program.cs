@@ -85,65 +85,37 @@ namespace IwasabandonedTest
             blnLoginTest04 = SiteTest.LoginTest4(driver);
             TestResult(blnLoginTest04);
 
-            Console.WriteLine("LoginTest5 - attempted inflitration");
+            Console.WriteLine("LoginTest5 - login");
             Boolean blnLoginTest05;
             blnLoginTest05 = SiteTest.LoginTest5(driver);
             TestResult(blnLoginTest05);
 
-            Console.WriteLine("SignTest10 - attempted inflitration");
-            Boolean blnLoginTest10;
-            blnLoginTest10 = SiteTest.Login Test10(driver);
-            TestResult(blnLoginTest10);
+            Console.WriteLine("SignTest10 - blank province");
+            Boolean blnSignTest10;
+            blnSignTest10 = SiteTest.SignTest10(driver);
+            TestResult(blnSignTest10);
 
-            public static Boolean LoginTest5(IWebDriver driver)
-            {
-                SiteReset();
-                try
-                {
-                    fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
-                        "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
-                        "in your walls");
-                    fillLogin(driver, "bruh", "password");
-                    if (driver.Url == ("http://47.55.247.242/site11/index.php"))
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-        }
-            public static Boolean LoginTest10(IWebDriver driver)
-                {
-                    SiteReset();
-                    try
-                    {
-                        fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
-                            "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
-                            "in your walls");
-                        fillLogin(driver, "bruh", "password");
-                        if (driver.Url == ("http://47.55.247.242/site11/index.php"))
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
-                    catch
-                    {
-                        return false;
-                    }
-                }
-            catch
-            {
-                return false;
-            }
-        }
-        
-        static void TestResult(Boolean blnResult)
+            Console.WriteLine("SignTest11 - postal misformatted");
+            Boolean blnSignTest11;
+            blnSignTest11 = SiteTest.SignTest11(driver);
+            TestResult(blnSignTest11);
+
+            Console.WriteLine("SignTest12 - postal blank");
+            Boolean blnSignTest12;
+            blnSignTest12 = SiteTest.SignTest12(driver);
+            TestResult(blnSignTest12);
+
+            Console.WriteLine("SignTest13 - address blank");
+            Boolean blnSignTest13;
+            blnSignTest13 = SiteTest.SignTest13(driver);
+            TestResult(blnSignTest13);
+
+            Console.WriteLine("SignTest14 - address blank");
+            Boolean blnSignTest14;
+            blnSignTest14 = SiteTest.SignTest14(driver);
+            TestResult(blnSignTest14);
+
+            static void TestResult(Boolean blnResult)
         {
             if (blnResult)
             {

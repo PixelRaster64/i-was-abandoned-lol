@@ -82,55 +82,7 @@ namespace IwasabandonedTest
                 return false;
             }
         }
-        public static Boolean SignTest10(IWebDriver driver)
-        {
-            try
-            {
-                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
-                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
-                    "in your walls");
-                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
-                String strSuccess = lblSuccess.Text;
-                public static Boolean SignTest1(IWebDriver driver)
-        {
-            try
-            {
-                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
-                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
-                    "in your walls");
-                        fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
-                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
-                    "in your walls");
-                        IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
-                String strSuccess = lblSuccess.Text;
-                if (strSuccess.Contains("Registration Successful!"))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
-            }
-            catch
-            {
-                return false;
-            }
-        }
-                if (strSuccess.Contains("Registration Successful!"))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        
         public static Boolean SignTest2(IWebDriver driver)
         {
             try
@@ -446,12 +398,147 @@ namespace IwasabandonedTest
                 return false;
             }
         }
+        public static Boolean SignTest10(IWebDriver driver)
+        {
+            try
+            {
+                SiteReset();
+                driver.Url = "http://47.55.247.242/site11/login.php";
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static Boolean SignTest11(IWebDriver driver)
+        {
+            try
+            {
+                SiteReset();
+                driver.Url = "http://47.55.247.242/site11/login.php";
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "aaaaaaaaa!", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static Boolean SignTest12(IWebDriver driver)
+        {
+            try
+            {
+                SiteReset();
+                driver.Url = "http://47.55.247.242/site11/login.php";
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static Boolean SignTest13(IWebDriver driver)
+        {
+            try
+            {
+                SiteReset();
+                driver.Url = "http://47.55.247.242/site11/login.php";
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static Boolean SignTest14(IWebDriver driver)
+        {
+            try
+            {
+                SiteReset();
+                driver.Url = "http://47.55.247.242/site11/login.php";
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+
+
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
         static void fillSignup(IWebDriver driver, String strFirst, String strLast, String strEmail,
             String strUser, String strPass, String strCon, String strPhone, String strProv,
             String strAdd, String strPost, String strUrl, String strDesc, String strLoc)
         {
-            SiteReset();
-            driver.Url = "http://47.55.247.242/site11/login.php";
+            
             IWebElement linSignup = driver.FindElement(By.LinkText("Click Here"));
             linSignup.Click();
             IWebElement txtFirstname = driver.FindElement(By.Id("firstname"));
