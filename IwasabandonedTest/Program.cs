@@ -20,10 +20,15 @@ namespace IwasabandonedTest
             blnTest01 = SiteTest.Test1(driver);
             TestResult(blnTest01);
 
-            Console.WriteLine("Test2 - Sign Up");
-            Boolean blnTest02;
-            blnTest02 = SiteTest.Test2(driver);
-            TestResult(blnTest02);
+            Console.WriteLine("SignTest2 - Sign Up");
+            Boolean blnSignTest02;
+            blnSignTest02 = SiteTest.SignTest2(driver);
+            TestResult(blnSignTest02);
+            
+            Console.WriteLine("SignTest3 - email Validation");
+            Boolean blnSignTest03;
+            blnSignTest03 = SiteTest.SignTest2(driver);
+            TestResult(blnSignTest03);
 
 
         }

@@ -58,12 +58,36 @@ namespace IwasabandonedTest
                 //Console.WriteLine("Test1 error link did not work");
             }
         }
-        public static Boolean Test2(IWebDriver driver)
+        public static Boolean Signtest1(IWebDriver driver)
         {
             SiteReset();
             try
             {
                 fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmail.com", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
+                String strSuccess = lblSuccess.Text;
+                if (strSuccess.Contains("Registration Successful!"))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public static Boolean SignTest2(IWebDriver driver)
+        {
+            SiteReset();
+            try
+            {
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64gmailcom", "Pixel", "password", "password",
                     "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
                     "in your walls");
                 IWebElement lblSuccess = driver.FindElement(By.ClassName("text-success"));
