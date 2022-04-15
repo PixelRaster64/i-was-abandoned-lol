@@ -1,0 +1,17 @@
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.exe
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.deps.json
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.runtimeconfig.json
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.runtimeconfig.dev.json
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.dll
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\IwasabandonedTest.pdb
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.csproj.AssemblyReference.cache
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.AssemblyInfoInputs.cache
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.AssemblyInfo.cs
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.csproj.CoreCompileInputs.cache
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.csproj.CopyComplete
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.dll
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.pdb
+C:\repo\i-was-abandoned-lol\IwasabandonedTest\obj\Debug\netcoreapp3.1\IwasabandonedTest.genruntimeconfig.cache

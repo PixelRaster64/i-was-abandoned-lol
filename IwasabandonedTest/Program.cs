@@ -14,6 +14,11 @@ namespace IwasabandonedTest
         static void Main(string[] args)
         {
             IWebDriver driver = new ChromeDriver(@"C:\Selenium");
+
+            Console.WriteLine("Test1 - Check link");
+            Boolean blnTest01;
+            blnTest01 = SiteTest.Test1(driver);
+            TestResult(blnTest01);
         }
         static void TestResult(Boolean blnResult)
         {
@@ -25,6 +30,7 @@ namespace IwasabandonedTest
             {
                 Console.WriteLine("Failed!");
             }
+
         }
     }
 }
