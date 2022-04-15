@@ -30,12 +30,6 @@ namespace IwasabandonedTest
             IWebElement linSignUp = driver.FindElement(By.LinkText("Click Here"));
             return linSignUp;
         }
-        public static IWebElement lblName(IWebDriver driver)
-        {
-            IWebElement lblName = driver.FindElement(By.ClassName("name"));
-            String nameLabel = lblName.Text;
-            return lblName;
-        }
         public static IWebElement txtFirstname(IWebDriver driver)
         {
             IWebElement txtFirstname = driver.FindElement(By.Id("firstname"));
@@ -61,9 +55,14 @@ namespace IwasabandonedTest
             IWebElement txtPhone = driver.FindElement(By.Id("phone"));
             return txtPhone;
         }
+        public static IWebElement txtAddress(IWebDriver driver)
+        {
+            IWebElement txtAddress = driver.FindElement(By.Id("address"));
+            return txtAddress;
+        }
         public static IWebElement dropProv(IWebDriver driver)
         {
-            IWebElement dropProv = driver.FindElement(By.Id("dropProv"));
+            IWebElement dropProv = driver.FindElement(By.Id("province"));
             return dropProv;
         }
         public static IWebElement txtPostal(IWebDriver driver)
