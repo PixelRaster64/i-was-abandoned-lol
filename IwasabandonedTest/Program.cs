@@ -70,6 +70,26 @@ namespace IwasabandonedTest
             blnLoginTest01 = SiteTest.LoginTest1(driver);
             TestResult(blnLoginTest01);
 
+            Console.WriteLine("LoginTest2 - password empty");
+            Boolean blnLoginTest02;
+            blnLoginTest02 = SiteTest.LoginTest2(driver);
+            TestResult(blnLoginTest02);
+
+            Console.WriteLine("LoginTest3 - username wrong");
+            Boolean blnLoginTest03;
+            blnLoginTest03 = SiteTest.LoginTest3(driver);
+            TestResult(blnLoginTest03);
+
+            Console.WriteLine("LoginTest4 - password long");
+            Boolean blnLoginTest04;
+            blnLoginTest04 = SiteTest.LoginTest4(driver);
+            TestResult(blnLoginTest04);
+
+            Console.WriteLine("LoginTest5 - attempted inflitration");
+            Boolean blnLoginTest05;
+            blnLoginTest05 = SiteTest.LoginTest5(driver);
+            TestResult(blnLoginTest05);
+
 
         }
         static void TestResult(Boolean blnResult)

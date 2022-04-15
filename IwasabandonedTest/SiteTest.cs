@@ -34,6 +34,7 @@ namespace IwasabandonedTest
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
+            //this thing sure does add alot of problems!
         }
         public static Boolean Test1(IWebDriver driver)
         {
@@ -297,6 +298,100 @@ namespace IwasabandonedTest
                 }
             }
 
+            catch
+            {
+                return false;
+            }
+        }
+        public static Boolean LoginTest2(IWebDriver driver)
+        {
+            SiteReset();
+            try
+            {
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                fillLogin(driver, "Pixel", "");
+                if (driver.Url == ("http://47.55.247.242/site11/index.php"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+
+            catch
+            {
+                return false;
+            }
+        }
+            public static Boolean LoginTest3(IWebDriver driver)
+            {
+                SiteReset();
+                try
+                {
+                    fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
+                        "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                        "in your walls");
+                    fillLogin(driver, "Pixe64", "Ha! Gotee!");
+                    if (driver.Url == ("http://47.55.247.242/site11/index.php"))
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        public static Boolean LoginTest4(IWebDriver driver)
+        {
+            SiteReset();
+            try
+            {
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                fillLogin(driver, "bruh", "password");
+                if (driver.Url == ("http://47.55.247.242/site11/index.php"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static Boolean LoginTest5(IWebDriver driver)
+        {
+            SiteReset();
+            try
+            {
+                fillSignup(driver, "Elliot", "Whippie", "pixelraster64@gmailcom", "Pixel", "password", "password",
+                    "(555) 555-5555", "New", "690 Yourmother Av.", "I0I 0I0", "www.youtube.com", "Holy Crap",
+                    "in your walls");
+                fillLogin(driver, "bruh", "password");
+                if (driver.Url == ("http://47.55.247.242/site11/index.php"))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
             catch
             {
                 return false;
